@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <nav class="bg-success" style="height:100px; text-align:center; font-size: larger;padding:-20px;">
+        <div style="align-items: center; justify-content: center; margin-bottom:-28px; color:white; padding-left: 120px;">
+            <a  style="padding:20px; color:white;" href="#"><ion-icon name="camera-outline"></ion-icon></a>
+            <a style="padding:20px; color:white;" href="#"><ion-icon name="search-outline"></ion-icon></ion-icon></a>
+            <a  style="padding:20px; color:white;" href="#"><ion-icon name="list-outline"></ion-icon></ion-icon></a>
+          </div>  
+        <div>  
+            <p style="margin-left:-200px;"><strong style="color:white;">WhatsApp</strong></p>
+        </div>
+        <div style="text-decoration: none;">
+            <a  style="text-decoration: none; padding: 30px;color:beige" href="community.html"><ion-icon name="people-outline"></ion-icon></a>
+            <a  style="text-decoration: none; padding: 30px;color:beige" href="Chats.html">Chats</a>
+            <a  style="text-decoration: none; padding: 30px;color:beige" href="Status.html">Status</a>
+            <a  style="text-decoration: none; padding: 30px;color:beige" href="Calls.html">Calls</a>
+
+        </div>
+    </nav>
+      <style>
+        /* Sidebar Container */
+        .sidebar {
+          width: 250px;
+          height: 100vh;
+          padding: 20px;
+          background: grey;
+        }
+        
+        /* Sidebar Heading */
+        .sidebar-heading {
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+        
+        /* Sidebar Navigation */
+        .sidebar-nav {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+        }
+        
+        .sidebar-nav li {
+          margin-bottom: 10px;
+          
+        }
+        
+        .sidebar-nav li a {
+          text-decoration: none;
+          color: #333;
+          display: block;
+          padding-left: 30px;
+          margin-top:-25px;
+        }
+        
+        /* Active Sidebar Item */
+        .sidebar-nav li.active a {
+          font-weight: bold;
+        }
+      </style>
+      <div class="sidebar">
+        <ul class="sidebar-nav">
+          <li class="active" style="padding:20px;"><ion-icon name="person-circle-outline"></ion-icon><a href="#">Benedict</a></li><hr><br>
+          <li><a  style="margin-left:-10px; margin-top:-30px"href="#"><span style="margin-left:-1px; padding:5px"><ion-icon name="person-circle-outline"></ion-icon></span> Muli</a></li><hr><br>
+          <li><a href="#"></a>
+            <li><a  style="margin-left:-10px; margin-top:-30px"href="#"><span style="margin-left:-1px; padding:5px"><ion-icon name="person-circle-outline"></ion-icon></span> Sophy</a></li><hr><br>
+            <li><a href="#"></a>
+                <li><a  style="margin-left:-10px; margin-top:-30px"href="#"><span style="margin-left:-1px; padding:5px"><ion-icon name="person-circle-outline"></ion-icon></span>Katana</a></li><hr><br>
+                <li><a href="#"></a>
+                    <li><a  style="margin-left:-10px; margin-top:-30px"href="#"><span style="margin-left:-1px; padding:5px"><ion-icon name="person-circle-outline"></ion-icon></span>Awilo</a></li><hr><br>
+                    <li><a href="#"></a>
+        </li>
+        </ul>
+      </div>  
+       <style>
+    .chat-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 20px;
+      margin-top:-800px;
+      margin-left:310px;
+    }
+    
+    .chat-bubble {
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top:30px;
+      max-width: 70%;
+      
+    }
+    
+    .user-message {
+      align-self: flex-end;
+      background-color: #dcf8c6;
+    }
+    
+    .bot-message {
+      align-self: flex-start;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-bubble user-message">
+      Hello Bro, Niaje?
+    </div>
+    
+    <div class="chat-bubble bot-message">
+      Hi,Fiti Sana, Na wewe Je?
+    </div>
+    
+    <div class="chat-bubble user-message">
+      Niko Fiti, Kitambo Bana, umepotelea Wapi.
+    </div>
+    
+    <div class="chat-bubble bot-message">
+      Sure, Niko Niko Mtaani, Tapanga tumeet Kaka.
+    </div>
+    <div class="chat-bubble user-message">
+        Would Love That Bro, Otherwise Mashughuli ziko Aje
+      </div>
+      
+      <div class="chat-bubble bot-message">
+        fiti Mazeee, kupambana kiume kiume si waelewa hahaha!
+      </div>
+      
+      <div class="chat-bubble user-message">
+        Kabisa bro hahaha Kuivisha kuivisha, hamna mchezo sai
+      </div>
+      
+      <div class="chat-bubble bot-message">
+        True, Its either we do it or Never! hahaha
+      </div>
+      <div class="chat-bubble user-message">
+        Vile Inafaa. Wewe Ukipata Time Tokelezea Bro, Tuendeee Madesign hahaha
+      </div>
+      
+      <div class="chat-bubble bot-message">
+        Ama Namna Gani Hahaha
+      </div>
+      
+      <div class="chat-bubble user-message">
+        Ausio!
+      </div>
+      Pamoja Kaka
+      <div class="chat-bubble bot-message">
+        
+      </div>
+      
+      
+  </div> 
+  
+
+</body>
+</html>
